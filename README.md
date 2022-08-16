@@ -4,7 +4,7 @@ Small Batch Script that dumps all Microsoft SQL Express databases before it star
 ## Microsoft SQL Express Configuration
 Before we can backup the database you need to create **SQL Stored Procedures** under atabases > System Databases > master > Programmability. Right-click it and click **New Stored Procedure**
 
-In the SQLQuery window, copy all the content in this [SQL Express Backups](../src/SQLExpressBackup.sql) script provided by Microsoft [Link to Microsoft Docs](https://docs.microsoft.com/en-us/troubleshoot/sql/admin/schedule-automate-backup-database), then click Execute button above. It will create a sp_BackupDatabases stored procedure in your master database, this will be used to be able to backup all the databases.
+In the SQLQuery window, copy all the content in this [SQL Express Backups](../src/SQLExpressBackup.sql) script provided by [Microsoft own Documentation](https://docs.microsoft.com/en-us/troubleshoot/sql/admin/schedule-automate-backup-database), then click Execute button above. It will create a sp_BackupDatabases stored procedure in your master database, this will be used to be able to backup all the databases.
 
 ## Spectrum Protect Configuration
 Create a catalog where you want to locate your database backups. 
